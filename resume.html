@@ -1,0 +1,198 @@
+<script type="text/javascript">
+        var gk_isXlsx = false;
+        var gk_xlsxFileLookup = {};
+        var gk_fileData = {};
+        function filledCell(cell) {
+          return cell !== '' && cell != null;
+        }
+        function loadFileData(filename) {
+        if (gk_isXlsx && gk_xlsxFileLookup[filename]) {
+            try {
+                var workbook = XLSX.read(gk_fileData[filename], { type: 'base64' });
+                var firstSheetName = workbook.SheetNames[0];
+                var worksheet = workbook.Sheets[firstSheetName];
+
+                // Convert sheet to JSON to filter blank rows
+                var jsonData = XLSX.utils.sheet_to_json(worksheet, { header: 1, blankrows: false, defval: '' });
+                // Filter out blank rows (rows where all cells are empty, null, or undefined)
+                var filteredData = jsonData.filter(row => row.some(filledCell));
+
+                // Heuristic to find the header row by ignoring rows with fewer filled cells than the next row
+                var headerRowIndex = filteredData.findIndex((row, index) =>
+                  row.filter(filledCell).length >= filteredData[index + 1]?.filter(filledCell).length
+                );
+                // Fallback
+                if (headerRowIndex === -1 || headerRowIndex > 25) {
+                  headerRowIndex = 0;
+                }
+
+                // Convert filtered JSON back to CSV
+                var csv = XLSX.utils.aoa_to_sheet(filteredData.slice(headerRowIndex)); // Create a new sheet from filtered array of arrays
+                csv = XLSX.utils.sheet_to_csv(csv, { header: 1 });
+                return csv;
+            } catch (e) {
+                console.error(e);
+                return "";
+            }
+        }
+        return gk_fileData[filename] || "";
+        }
+        </script><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harsh Patel - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .fade-in { animation: fadeIn 1s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .slide-in { animation: slideIn 0.5s ease-out; }
+        @keyframes slideIn { from { transform: translateY(20px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <div class="container mx-auto max-w-4xl bg-white shadow-lg p-8 my-8 rounded-lg">
+        <!-- Header -->
+        <header class="text-center mb-8 fade-in">
+            <h1 class="text-4xl font-bold text-blue-700">Harsh G. Patel</h1>
+            <h2 class="text-xl text-gray-600">Mobile Application Developer</h2>
+            <div class="flex justify-center space-x-4 mt-4 text-gray-700">
+                <a href="tel:+919662414176" class="hover:text-blue-500">(+91) 9662414176</a>
+                <span>|</span>
+                <a href="mailto:patelharsh1852@gmail.com" class="hover:text-blue-500">patelharsh1852@gmail.com</a>
+                <span>|</span>
+                <span>Ahmedabad, India</span>
+                <span>|</span>
+                <span>Experience: 2 Years 2 Months</span>
+            </div>
+        </header>
+
+        <!-- Profile Summary -->
+        <section class="mb-6 slide-in">
+            <h3 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-2">Profile Summary</h3>
+            <p class="mt-2 text-gray-700">Passionate Android developer skilled in Java, Kotlin, and Android Studio. Experienced in building complex UIs and integrating seamless functionality. Strong in API integration and committed to using the latest technologies and best practices to deliver top-notch Android applications.</p>
+        </section>
+
+        <!-- Key Skills -->
+        <section class="mb-6 slide-in">
+            <h3 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-2">Key Skills</h3>
+            <ul class="list-disc list-inside mt-2 text-gray-700">
+                <li>Mobile Application Development, Android, Flutter, Kotlin</li>
+                <li>Firebase, Retrofit, Android Studio, Life Cycle, Notification</li>
+                <li>GitHub, API, Location Management, NFC, Performance Management</li>
+            </ul>
+        </section>
+
+        <!-- Certification -->
+        <section class="mb-6 slide-in">
+            <h3 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-2">Certification</h3>
+            <ul class="list-disc list-inside mt-2 text-gray-700">
+                <li>Cloud Computing With AWS</li>
+            </ul>
+        </section>
+
+        <!-- Languages -->
+        <section class="mb-6 slide-in">
+            <h3 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-2">Languages</h3>
+            <ul class="list-disc list-inside mt-2 text-gray-700">
+                <li>English, Gujarati, Hindi</li>
+            </ul>
+        </section>
+
+        <!-- Work Experience -->
+        <section class="mb-6 slide-in">
+            <h3 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-2">Work Experience</h3>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-800">Mobile Application Developer, CHPL</h4>
+                <p class="text-gray-600 italic">05/2023 - Present</p>
+                <ul class="list-disc list-inside mt-2 text-gray-700">
+                    <li>Developed and launched 10+ applications from scratch on the Google Play Store.</li>
+                    <li>Key contributor to a pan-level laundry application, integrating payment gateways, pickup/delivery logistics, and utilizing phone lat/long to track user locations, all within fixed timelines.</li>
+                    <li>Implemented NFC functionality to enhance user experience and operational efficiency.</li>
+                    <li>Optimized employee management processes for the core app, improving organizational workflows.</li>
+                    <li>Strong in team management, delivering projects within tight deadlines.</li>
+                    <li>Part of R&D for new functionality and integration.</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-800">Android Trainee, Technomark Solutions</h4>
+                <p class="text-gray-600 italic">01/2023 - 05/2023</p>
+                <ul class="list-disc list-inside mt-2 text-gray-700">
+                    <li>Worked on a live account application project, deepening technical knowledge and fostering teamwork.</li>
+                    <li>Contributed to providing real-time financial information to users.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="mb-6 slide-in">
+            <h3 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-2">Projects</h3>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-800">Pollution Detection Devices (15 Months)</h4>
+                <ul class="list-disc list-inside mt-2 text-gray-700">
+                    <li>Built a device connected to government systems to notify authorities of pollution violations by companies or factories.</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-800">MyCric Score (2 Months)</h4>
+                <ul class="list-disc list-inside mt-2 text-gray-700">
+                    <li>Developed an app with batting/bowling stats, player profiles, and video highlights.</li>
+                    <li>Included user-friendly interface and bar charts for team score comparisons.</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-800">Technofind (2 Months)</h4>
+                <ul class="list-disc list-inside mt-2 text-gray-700">
+                    <li>Integrated audio/video calls, chat, and Razorpay payment functionality for an interactive user experience.</li>
+                    <li>Enabled real-time discussions with technology experts.</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-800">Location Tracking (1 Month)</h4>
+                <ul class="list-disc list-inside mt-2 text-gray-700">
+                    <li>Developed a solution for seamless background and foreground location tracking on Android.</li>
+                    <li>Ensured compatibility with Doze mode and battery optimization features.</li>
+                </ul>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-800">NFC Integration (2 Weeks)</h4>
+                <ul class="list-disc list-inside mt-2 text-gray-700">
+                    <li>Implemented NFC tagging for laundry items to display details via phone tap.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section class="mb-6 slide-in">
+            <h3 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-2">Education</h3>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-800">B.Tech, Parul Institute of Engineering and Technology, Vadodara</h4>
+                <p class="text-gray-600 italic">2023 | 7.6/10</p>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-800">12th, Plazma Group of Science, Godhara</h4>
+                <p class="text-gray-600 italic">2019 | 69.9%</p>
+            </div>
+            <div class="mt-4">
+                <h4 class="text-lg font-semibold text-gray-800">10th, M&M Mehta, Godhara</h4>
+                <p class="text-gray-600 italic">2017 | 94.2%</p>
+            </div>
+        </section>
+
+        <!-- Hobbies -->
+        <section class="mb-6 slide-in">
+            <h3 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-2">Hobbies</h3>
+            <ul class="list-disc list-inside mt-2 text-gray-700">
+                <li>Creating and uploading meme posts in Gujarati on Instagram.</li>
+            </ul>
+        </section>
+
+        <!-- Permanent Address -->
+        <section class="slide-in">
+            <h3 class="text-2xl font-semibold text-blue-700 border-b-2 border-blue-200 pb-2">Permanent Address</h3>
+            <p class="mt-2 text-gray-700">At Post Prempur, Himmatnagar</p>
+        </section>
+    </div>
+</body>
+</html>
