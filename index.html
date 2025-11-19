@@ -11,15 +11,16 @@
         .slide-in { animation: slideIn 0.8s ease-out; }
         @keyframes slideIn { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
         .hover-scale { transition: transform 0.3s ease, color 0.3s ease; }
-        .hover-scale:hover { transform: scale(1.03); color: #1e40af; }
+        .hover-scale:hover { transform: scale(1.03); 1.03); color: #1e40af; }
         .section-border { border-left: 5px solid #1e40af; padding-left: 1.5rem; }
-        .bg-gradient { background: linear-gradient(to right, #eff6ff, #ffffff); }
+        .bg-gradient { background: linear-gradient(to right, #FFFFFF, #ffffff); }
         .shadow-hover { transition: box-shadow 0.3s ease; }
         .shadow-hover:hover { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
     </style>
 </head>
 <body class="bg-gray-100 font-sans">
     <div class="container mx-auto max-w-6xl bg-white shadow-2xl p-12 my-12 rounded-2xl bg-gradient">
+
         <!-- Header -->
         <header class="text-center mb-12 fade-in">
             <h1 class="text-5xl font-extrabold text-blue-800">Harsh G. Patel</h1>
@@ -42,7 +43,7 @@
         <!-- Professional Summary -->
         <section class="mb-10 slide-in section-border shadow-hover">
             <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Professional Summary</h3>
-            <p class="mt-4 text-gray-700 leading-relaxed">Dedicated Android developer with 2+ years of experience crafting high-quality, user-centric mobile applications. Expert in Kotlin, Java, and Android Jetpack, with a focus on MVVM, Clean Architecture, and Jetpack Compose for modern UI development. Successfully delivered 10+ apps to the Google Play Store, achieving over 50,000 downloads. Skilled in integrating RESTful/GraphQL APIs, optimizing performance with Coroutines and Room, and ensuring compliance with Android’s battery and security standards. Passionate about agile development, CI/CD pipelines, and mentoring teams to deliver scalable, robust solutions.</p>
+            <p class="mt-4 text-gray-700 leading-relaxed">Dedicated Android developer with 3+ years of experience crafting high-quality, user-centric mobile applications. Expert in Kotlin, Java, and Android Jetpack, with a focus on MVVM, Clean Architecture, and Jetpack Compose for modern UI development. Successfully delivered 10+ apps to the Google Play Store, achieving over 50,000 downloads. Skilled in integrating RESTful/GraphQL APIs, optimizing performance with Coroutines and Room, and ensuring compliance with Android’s battery and security standards. Passionate about agile development, CI/CD pipelines, and mentoring teams to deliver scalable, robust solutions.</p>
         </section>
 
         <!-- Technical Skills -->
@@ -58,7 +59,7 @@
                     <li><strong>Architectures:</strong> MVVM, MVP, Clean Architecture</li>
                     <li><strong>APIs & Integrations:</strong> RESTful APIs, GraphQL, Retrofit, OkHttp, Razorpay, Google Maps, Firebase (Analytics, Crashlytics, Push Notifications), NFC</li>
                     <li><strong>Testing & Optimization:</strong> JUnit, Performance Profiling, Doze Mode, Battery Optimization</li>
-                    <li><strong>Others:</strong> GitHub Actions, App Signing, Play Store Deployment</li>
+                    <li><strong>Others:</strong> GitHub Actions, App Signing, Play Store Deployment,Custome Listing, Jsoup</li>
                 </ul>
             </div>
         </section>
@@ -67,7 +68,7 @@
         <section class="mb-10 slide-in section-border shadow-hover">
             <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Certifications</h3>
             <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
-                <li>Cloud Computing with AWS </li>
+                <li>Cloud Computing with AWS</li>
             </ul>
         </section>
 
@@ -86,25 +87,28 @@
                 <h4 class="text-xl font-semibold text-gray-800">Sr. Android Developer, CHPL</h4>
                 <p class="text-gray-600 italic">May 2023 - Present, Ahmedabad, India</p>
                 <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                  <li>Developed and launched 10+ Android applications from scratch on the Google Play Store, achieving 50,000+ downloads and 4.5+ average ratings, utilizing Kotlin and MVVM architecture.</li>
+                    <li>Developed and launched 10+ Android applications from scratch on the Google Play Store, achieving 50,000+ downloads and 4.5+ average ratings, utilizing Kotlin and MVVM architecture.</li>
                     <li>Led development of a pan-India laundry service application, integrating Razorpay payment gateways, pickup/delivery logistics with Google Maps API for real-time lat/long tracking, and NFC for item tagging, reducing operational errors by 35% and meeting fixed project timelines.</li>
-                    <li>Implemented NFC functionality using Android NFC , enabling seamless item tracking and enhancing user experience through streamlined laundry management processes.</li>
-                    <li>Contributed to R&D for new module development like background tracking , doze mode support etc.</li> </ul>
+                    <li>Implemented NFC functionality using Android NFC, enabling seamless item tracking and enhancing user experience through streamlined laundry management processes.</li>
+                    <li>Contributed to R&D for new module development like background tracking, doze mode support etc.</li>
+                </ul>
             </div>
             <div class="mt-6">
                 <h4 class="text-xl font-semibold text-gray-800">Android Developer, Technomark Solutions</h4>
                 <p class="text-gray-600 italic">January 2023 - May 2023, Ahmedabad, India</p>
                 <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                     <li>Contributed to the development of a live financial account management application, delivering real-time financial information to thousands of users, enhancing their ability to track transactions and balances.</li>
-                    <li>Deepened technical expertise in Android development by implementing RESTful APIs with Retrofit and OkHttp, ensuring efficient data retrieval for seamless user experiences.</li>
-                    <li>Utilized Android Lifecycle components and Room database to manage data persistence, improving app reliability during configuration changes and offline scenarios.</li>
-                    <li>Supported UI enhancements using XML layouts and Material Design principles, creating intuitive interfaces that aligned with user expectations for financial applications.</li></ul>
+                    <li>Contributed to the development of a live financial account management application, delivering real-time financial information to thousands of users.</li>
+                    <li>Deepened technical expertise in Android development by implementing RESTful APIs with Retrofit and OkHttp.</li>
+                    <li>Utilized Android Lifecycle components and Room database to manage data persistence.</li>
+                    <li>Supported UI enhancements using XML layouts and Material Design principles.</li>
+                </ul>
             </div>
         </section>
 
         <!-- Key Projects -->
         <section class="mb-10 slide-in section-border shadow-hover">
             <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Key Projects</h3>
+
             <div class="mt-6">
                 <h4 class="text-xl font-semibold text-gray-800">Pollution Detection System</h4>
                 <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
@@ -113,14 +117,15 @@
                     <li>Optimized app for low-power devices</li>
                 </ul>
             </div>
-        
+
             <div class="mt-6">
                 <h4 class="text-xl font-semibold text-gray-800">Location Tracking Solution</h4>
                 <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                    <li>Engineered a location tracking feature using Fused Location Provider, supporting foreground and background modes across All Android.</li>
+                    <li>Engineered a location tracking feature using Fused Location Provider, supporting foreground and background modes across all Android versions.</li>
                     <li>Optimized for battery efficiency, reducing power consumption by 40% while maintaining 95% location accuracy.</li>
                 </ul>
             </div>
+
             <div class="mt-6">
                 <h4 class="text-xl font-semibold text-gray-800">NFC Laundry Tagging</h4>
                 <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
@@ -128,6 +133,30 @@
                     <li>Integrated with Room database for offline support</li>
                 </ul>
             </div>
+
+            <!-- Personal Published Apps -->
+            <div class="mt-6">
+                <h4 class="text-xl font-semibold text-gray-800">
+                    Ai Prompts: Gem Art Studio 
+                    <a href="https://play.google.com/store/apps/details?id=com.heaventrinity.dynamic" target="_blank" class="text-blue-600 hover:underline text-lg font-medium">(Play Store)</a>
+                </h4>
+                <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+                    <li>Independently designed and developed a creative AI prompt app featuring 1000+ categorized prompts (art, design, photography, festivals) with preview images and one-click copy functionality.</li>
+                    <li>Built using Kotlin, MVVM architecture, Room DB, and Material Design — achieved 10K+ downloads and 4.8-star rating on Google Play Store.</li>
+                </ul>
+            </div>
+
+            <div class="mt-6">
+                <h4 class="text-xl font-semibold text-gray-800">
+                    IPO Live 
+                    <a href="https://play.google.com/store/apps/details?id=com.heaventrinity.ipo" target="_blank" class="text-blue-600 hover:underline text-lg font-medium">(Play Store)</a>
+                </h4>
+                <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+                    <li>Created a real-time IPO tracking app for the Indian stock market with live subscription status, allotment updates, GMP, listing gains, and push notifications.</li>
+                    <li>Fully developed and published independently — actively used by investors for making informed decisions.</li>
+                </ul>
+            </div>
+
         </section>
 
         <!-- Education -->
@@ -137,22 +166,14 @@
                 <h4 class="text-xl font-semibold text-gray-800">B.Tech in Computer Science, Parul Institute of Engineering and Technology</h4>
                 <p class="text-gray-600 italic">Vadodara, 2023 | CGPA: 7.6/10</p>
             </div>
-            <div class="mt-4">
-                <h4 class="text-xl font-semibold text-gray-800">12th, Plazma Group of Science</h4>
-                <p class="text-gray-600 italic">Godhara, 2019 | 69.9%</p>
-            </div>
-            <div class="mt-4">
-                <h4 class="text-xl font-semibold text-gray-800">10th, M&M Mehta</h4>
-                <p class="text-gray-600 italic">Godhara, 2017 | 94.2%</p>
-            </div>
         </section>
 
         <!-- Achievements -->
         <section class="mb-10 slide-in section-border shadow-hover">
             <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Achievements</h3>
             <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
-                <li>Published 10+ apps on Google Play Store, collectively achieving 50,000+ downloads and 4.5+ ratings.</li>
-                <li>Reduced app crash rate by 40% through rigorous testing and Crashlytics integration at CHPL.</li>
+                <li>Published Personal 5+ apps on Google Play Store, collectively achieving 80,000+ downloads and 4.5+ ratings.</li>
+                
                 <li>Recognized as “Employee of the Quarter” at CHPL for leading successful app launches.</li>
             </ul>
         </section>
