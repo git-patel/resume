@@ -11,7 +11,7 @@
         .slide-in { animation: slideIn 0.8s ease-out; }
         @keyframes slideIn { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
         .hover-scale { transition: transform 0.3s ease, color 0.3s ease; }
-        .hover-scale:hover { transform: scale(1.03); 1.03); color: #1e40af; }
+        .hover-scale:hover { transform: scale(1.03); color: #1e40af; }
         .section-border { border-left: 5px solid #1e40af; padding-left: 1.5rem; }
         .bg-gradient { background: linear-gradient(to right, #FFFFFF, #ffffff); }
         .shadow-hover { transition: box-shadow 0.3s ease; }
@@ -20,7 +20,6 @@
 </head>
 <body class="bg-gray-100 font-sans">
     <div class="container mx-auto max-w-6xl bg-white shadow-2xl p-12 my-12 rounded-2xl bg-gradient">
-
         <!-- Header -->
         <header class="text-center mb-12 fade-in">
             <h1 class="text-5xl font-extrabold text-blue-800">Harsh G. Patel</h1>
@@ -43,7 +42,9 @@
         <!-- Professional Summary -->
         <section class="mb-10 slide-in section-border shadow-hover">
             <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Professional Summary</h3>
-            <p class="mt-4 text-gray-700 leading-relaxed">Dedicated Android developer with 3+ years of experience crafting high-quality, user-centric mobile applications. Expert in Kotlin, Java, and Android Jetpack, with a focus on MVVM, Clean Architecture, and Jetpack Compose for modern UI development. Successfully delivered 10+ apps to the Google Play Store, achieving over 50,000 downloads. Skilled in integrating RESTful/GraphQL APIs, optimizing performance with Coroutines and Room, and ensuring compliance with Android’s battery and security standards. Passionate about agile development, CI/CD pipelines, and mentoring teams to deliver scalable, robust solutions.</p>
+            <p class="mt-4 text-gray-700 leading-relaxed">
+                Results-driven Android Developer with 3+ years of experience building scalable, high-performance mobile applications used by thousands of users across India. Strong expertise in Kotlin, Java, MVVM architecture, background services, location tracking, NFC integration, and API-driven apps. Successfully developed and published 10+ Android applications on the Google Play Store with 100000+ downloads and high user ratings. Experienced in full app lifecycle—from requirement analysis to Play Store deployment—focused on performance, battery optimization, and real-world usability.
+            </p>
         </section>
 
         <!-- Technical Skills -->
@@ -51,56 +52,41 @@
             <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Technical Skills</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4 text-gray-700">
                 <ul class="list-disc list-inside space-y-1">
-                    <li><strong>Programming Languages:</strong> Kotlin, Java, Dart (Flutter), XML, JSON</li>
-                    <li><strong>Android Frameworks:</strong> Room, WorkManager, Navigation, LiveData, ViewModel</li>
-                    <li><strong>Development Tools:</strong> Android Studio, IntelliJ IDEA, Git, GitHub, Gradle</li>
+                    <li><strong>Programming Languages:</strong> Kotlin, Java, Dart (Flutter – basic), XML, JSON</li>
+                    <li><strong>Android Development:</strong> Android SDK, MVVM Architecture, ViewModel, LiveData, Room Database, WorkManager, Background Services, Broadcast Receivers, Fused Location Provider, Google Maps SDK, NFC (Read/Write)</li>
+                    <li><strong>Networking & APIs:</strong> RESTful APIs, GraphQL, Retrofit, OkHttp</li>
                 </ul>
                 <ul class="list-disc list-inside space-y-1">
-                    <li><strong>Architectures:</strong> MVVM, MVP, Clean Architecture</li>
-                    <li><strong>APIs & Integrations:</strong> RESTful APIs, GraphQL, Retrofit, OkHttp, Razorpay, Google Maps, Firebase (Analytics, Crashlytics, Push Notifications), NFC</li>
-                    <li><strong>Testing & Optimization:</strong> JUnit, Performance Profiling, Doze Mode, Battery Optimization</li>
-                    <li><strong>Others:</strong> GitHub Actions, App Signing, Play Store Deployment,Custome Listing, Jsoup</li>
+                    <li><strong>Tools & Platforms:</strong> Android Studio, IntelliJ IDEA, Git, GitHub, Gradle, Firebase (Analytics, Crashlytics, Push Notifications), Razorpay Payment Gateway, Google Play Console, GitHub Actions (CI/CD – basic automation)</li>
+                    <li><strong>Optimization & Performance:</strong> Battery Optimization, Doze Mode Handling, Background Location Optimization, App Size & Performance Profiling</li>
                 </ul>
             </div>
-        </section>
-
-        <!-- Certifications -->
-        <section class="mb-10 slide-in section-border shadow-hover">
-            <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Certifications</h3>
-            <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
-                <li>Cloud Computing with AWS</li>
-            </ul>
-        </section>
-
-        <!-- Languages -->
-        <section class="mb-10 slide-in section-border shadow-hover">
-            <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Languages</h3>
-            <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
-                <li>English (Fluent), Gujarati (Native), Hindi (Proficient)</li>
-            </ul>
         </section>
 
         <!-- Professional Experience -->
         <section class="mb-10 slide-in section-border shadow-hover">
             <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Professional Experience</h3>
             <div class="mt-6">
-                <h4 class="text-xl font-semibold text-gray-800">Sr. Android Developer, CHPL</h4>
-                <p class="text-gray-600 italic">May 2023 - Present, Ahmedabad, India</p>
+                <h4 class="text-xl font-semibold text-gray-800">Senior Android Developer</h4>
+                <p class="text-gray-600 italic">CHPL, Ahmedabad, India — May 2023 – Present</p>
                 <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                    <li>Developed and launched 10+ Android applications from scratch on the Google Play Store, achieving 50,000+ downloads and 4.5+ average ratings, utilizing Kotlin and MVVM architecture.</li>
-                    <li>Led development of a pan-India laundry service application, integrating Razorpay payment gateways, pickup/delivery logistics with Google Maps API for real-time lat/long tracking, and NFC for item tagging, reducing operational errors by 35% and meeting fixed project timelines.</li>
-                    <li>Implemented NFC functionality using Android NFC, enabling seamless item tracking and enhancing user experience through streamlined laundry management processes.</li>
-                    <li>Contributed to R&D for new module development like background tracking, doze mode support etc.</li>
+                    <li>Designed, developed, and published 10+ Android applications using Kotlin and MVVM architecture, achieving 50,000+ total downloads and 4.5+ average Play Store ratings.</li>
+                    <li>Led development of a pan-India laundry service application with Razorpay payment gateway integration, real-time pickup & delivery tracking using Google Maps (lat/long), NFC-based laundry item tagging.</li>
+                    <li>Implemented NFC read/write functionality for seamless item identification and offline data access.</li>
+                    <li>Built and optimized background location tracking with support for Doze Mode, ensuring reliability across Android versions.</li>
+                    <li>Actively contributed to R&D for new modules, including background processing, power optimization, and performance improvements.</li>
+                    <li>Handled Play Store deployments, versioning, signing, and production rollouts.</li>
                 </ul>
             </div>
             <div class="mt-6">
-                <h4 class="text-xl font-semibold text-gray-800">Android Developer, Technomark Solutions</h4>
-                <p class="text-gray-600 italic">January 2023 - May 2023, Ahmedabad, India</p>
+                <h4 class="text-xl font-semibold text-gray-800">Android Developer</h4>
+                <p class="text-gray-600 italic">Technomark Solutions, Ahmedabad, India — January 2023 – May 2023</p>
                 <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                    <li>Contributed to the development of a live financial account management application, delivering real-time financial information to thousands of users.</li>
-                    <li>Deepened technical expertise in Android development by implementing RESTful APIs with Retrofit and OkHttp.</li>
-                    <li>Utilized Android Lifecycle components and Room database to manage data persistence.</li>
-                    <li>Supported UI enhancements using XML layouts and Material Design principles.</li>
+                    <li>Contributed to a live financial account management application delivering real-time data to a large user base.</li>
+                    <li>Integrated RESTful APIs using Retrofit and OkHttp.</li>
+                    <li>Implemented Room database for offline data storage and caching.</li>
+                    <li>Worked with Android lifecycle components to ensure stability and performance.</li>
+                    <li>Enhanced UI using XML layouts and Material Design guidelines.</li>
                 </ul>
             </div>
         </section>
@@ -108,63 +94,64 @@
         <!-- Key Projects -->
         <section class="mb-10 slide-in section-border shadow-hover">
             <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Key Projects</h3>
-
+            
             <div class="mt-6">
                 <h4 class="text-xl font-semibold text-gray-800">Pollution Detection System</h4>
                 <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                    <li>Built an IoT-integrated Android app for government pollution monitoring, using MQTT for device communication and Firebase Realtime Database for data storage.</li>
-                    <li>Implemented push notifications to alert authorities of violations, achieving 99% delivery reliability.</li>
-                    <li>Optimized app for low-power devices</li>
+                    <li>Developed an IoT-integrated Android application for government pollution monitoring.</li>
+                    <li>Used MQTT protocol for device communication and Firebase Realtime Database for real-time data storage.</li>
+                    <li>Implemented push notifications to alert authorities, achieving 99% delivery reliability.</li>
+                    <li>Optimized the app for low-power and low-end devices.</li>
                 </ul>
             </div>
 
             <div class="mt-6">
                 <h4 class="text-xl font-semibold text-gray-800">Location Tracking Solution</h4>
                 <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                    <li>Engineered a location tracking feature using Fused Location Provider, supporting foreground and background modes across all Android versions.</li>
-                    <li>Optimized for battery efficiency, reducing power consumption by 40% while maintaining 95% location accuracy.</li>
+                    <li>Engineered a robust location tracking system using Fused Location Provider.</li>
+                    <li>Supported foreground & background tracking across Android versions.</li>
                 </ul>
             </div>
 
             <div class="mt-6">
-                <h4 class="text-xl font-semibold text-gray-800">NFC Laundry Tagging</h4>
+                <h4 class="text-xl font-semibold text-gray-800">NFC Laundry Tagging System</h4>
                 <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                    <li>Implemented NFC functionality to tag laundry items, enabling instant data retrieval with 100% read accuracy.</li>
-                    <li>Integrated with Room database for offline support</li>
-                </ul>
-            </div>
-
-            <!-- Personal Published Apps -->
-            <div class="mt-6">
-                <h4 class="text-xl font-semibold text-gray-800">
-                    Ai Prompts: Gem Art Studio 
-                    <a href="https://play.google.com/store/apps/details?id=com.heaventrinity.dynamic" target="_blank" class="text-blue-600 hover:underline text-lg font-medium">(Play Store)</a>
-                </h4>
-                <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                    <li>Independently designed and developed a creative AI prompt app featuring 1000+ categorized prompts (art, design, photography, festivals) with preview images and one-click copy functionality.</li>
-                    <li>Built using Kotlin, MVVM architecture, Room DB, and Material Design — achieved 10K+ downloads and 4.8-star rating on Google Play Store.</li>
+                    <li>Implemented NFC-based tagging for laundry items with 100% read accuracy.</li>
+                    <li>Integrated with Room database for offline access and sync.</li>
+                    <li>Improved operational speed and reduced manual errors.</li>
                 </ul>
             </div>
 
             <div class="mt-6">
                 <h4 class="text-xl font-semibold text-gray-800">
-                    IPO Live 
-                    <a href="https://play.google.com/store/apps/details?id=com.heaventrinity.ipo" target="_blank" class="text-blue-600 hover:underline text-lg font-medium">(Play Store)</a>
+                    AI Prompts – Gem Art Studio
+                    <a href="https://play.google.com/store/apps/details?id=com.heaventrinity.dynamic" target="_blank" class="text-blue-600 hover:underline ml-2 text-lg font-medium">(Play Store)</a>
                 </h4>
                 <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
-                    <li>Created a real-time IPO tracking app for the Indian stock market with live subscription status, allotment updates, GMP, listing gains, and push notifications.</li>
-                    <li>Fully developed and published independently — actively used by investors for making informed decisions.</li>
+                    <li>Independently designed and developed a creative AI prompt application featuring 1000+ categorized prompts (art, design, photography, festivals) with preview images and one-click copy functionality.</li>
+                    <li>Tech Stack: Kotlin, MVVM, Room DB, Material Design</li>
+                    <li>Achieved 10,000+ downloads and 4.8-star rating.</li>
                 </ul>
             </div>
 
+            <div class="mt-6">
+                <h4 class="text-xl font-semibold text-gray-800">
+                    IPO Live
+                    <a href="https://play.google.com/store/apps/details?id=com.heaventrinity.ipo" target="_blank" class="text-blue-600 hover:underline ml-2 text-lg font-medium">(Play Store)</a>
+                </h4>
+                <ul class="list-disc list-inside mt-2 text-gray-700 space-y-1">
+                    <li>Built a real-time IPO tracking app for the Indian stock market featuring live subscription status, allotment updates, GMP, listing gains, and push notifications.</li>
+                    <li>Fully developed, published, and maintained independently.</li>
+                </ul>
+            </div>
         </section>
 
         <!-- Education -->
         <section class="mb-10 slide-in section-border shadow-hover">
             <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Education</h3>
             <div class="mt-6">
-                <h4 class="text-xl font-semibold text-gray-800">B.Tech in Computer Science, Parul Institute of Engineering and Technology</h4>
-                <p class="text-gray-600 italic">Vadodara, 2023 | CGPA: 7.6/10</p>
+                <h4 class="text-xl font-semibold text-gray-800">Bachelor of Technology (B.Tech) – Computer Science</h4>
+                <p class="text-gray-600 italic">Parul Institute of Engineering and Technology, Vadodara — 2023 | CGPA: 7.6 / 10</p>
             </div>
         </section>
 
@@ -172,18 +159,35 @@
         <section class="mb-10 slide-in section-border shadow-hover">
             <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Achievements</h3>
             <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
-                <li>Published Personal 5+ apps on Google Play Store, collectively achieving 80,000+ downloads and 4.5+ ratings.</li>
-                
-                <li>Recognized as “Employee of the Quarter” at CHPL for leading successful app launches.</li>
+                <li>Published 15+ personal Android apps on Google Play Store with 90,000+ combined downloads.</li>
+                <li>Awarded “Employee of the Quarter” at CHPL for leading successful app launches.</li>
             </ul>
         </section>
 
-        <!-- Hobbies -->
+        <!-- Open Source & Community -->
         <section class="mb-10 slide-in section-border shadow-hover">
-            <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Hobbies</h3>
+            <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Open Source & Community</h3>
             <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
-                <li>Creating Gujarati meme content on Instagram, growing a following of 5,000+.</li>
-                <li>Contributing to open-source Android projects on GitHub, with 3 merged pull requests.</li>
+                <li>Active contributor to open-source Android projects on GitHub.</li>
+            </ul>
+        </section>
+
+        <!-- Languages -->
+        <section class="mb-10 slide-in section-border shadow-hover">
+            <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Languages</h3>
+            <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
+                <li>English – Fluent</li>
+                <li>Hindi – Proficient</li>
+                <li>Gujarati – Native</li>
+            </ul>
+        </section>
+
+        <!-- Hobbies & Interests -->
+        <section class="mb-10 slide-in section-border shadow-hover">
+            <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Hobbies & Interests</h3>
+            <ul class="list-disc list-inside mt-4 text-gray-700 space-y-1">
+                <li>Creating Gujarati meme content on Instagram (5,000+ followers).</li>
+                <li>Exploring new Android APIs and performance optimization techniques.</li>
             </ul>
         </section>
 
@@ -192,6 +196,7 @@
             <h3 class="text-3xl font-bold text-blue-800 border-b-2 border-blue-200 pb-2">Permanent Address</h3>
             <p class="mt-4 text-gray-700">At Post Prempur, Himmatnagar, Gujarat, 383225, India</p>
         </section>
+
     </div>
 </body>
 </html>
