@@ -3,297 +3,250 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Harsh G. Patel - Software Engineer - Android</title>
+<title>Harsh G. Patel - Android Software Engineer</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
-.fade-in { animation: fadeIn 1.2s ease-in; }
-@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
-
-.slide-in { animation: slideIn 0.8s ease-out; }
-@keyframes slideIn { from { transform: translateY(40px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
-
-.section-border { border-left: 5px solid #1e40af; padding-left: 1.5rem; }
-.shadow-hover { transition: box-shadow .3s ease; }
-.shadow-hover:hover { box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); }
-
-/* PERFECT PDF PRINT OPTIMIZATION */
-@media print {
-  body { background: white !important; }
-  .container {
-    box-shadow: none !important;
-    margin: 0 !important;
-    max-width: 100% !important;
-    padding: 30px !important;
-    border-radius: 0 !important;
-  }
-  .shadow-hover, .shadow-2xl { box-shadow: none !important; }
-  .fade-in, .slide-in { animation: none !important; }
-  a { color: #1e40af !important; text-decoration: underline !important; }
-  .print-break { page-break-inside: avoid; }
-}
+    body { font-family: Arial, Helvetica, sans-serif; }
+    .section-border { border-left: 4px solid #1e40af; padding-left: 1.25rem; }
+    .resume-section { break-inside: avoid; }
+    @media print {
+        body { background: #fff !important; }
+        .container {
+            max-width: 100% !important;
+            margin: 0 !important;
+            padding: 22px !important;
+            box-shadow: none !important;
+            border-radius: 0 !important;
+        }
+        .no-print { display: none !important; }
+        a { color: #1e40af !important; text-decoration: none !important; }
+        .section-border { border-left-width: 3px; }
+        section, .experience-item, .project-card { break-inside: avoid; }
+    }
 </style>
 </head>
-<body class="bg-gray-100 font-sans">
-<div class="container mx-auto max-w-5xl bg-white shadow-2xl p-12 my-12 rounded-2xl">
 
-<!-- HEADER -->
-<header class="text-center mb-12 fade-in">
-<h1 class="text-5xl font-extrabold text-blue-900">Harsh G. Patel</h1>
-<h2 class="text-xl text-gray-600 mt-2">Software Engineer - Android | Kotlin | MVVM | Jetpack | Scalable Apps</h2>
-<div class="flex flex-wrap justify-center gap-x-4 gap-y-1 mt-5 text-gray-700 text-sm">
-<a href="tel:+919662414176" class="hover:text-blue-700">+91 96624 14176</a>
-<span class="text-gray-400">|</span>
-<a href="mailto:patelharsh1852@gmail.com" class="hover:text-blue-700">patelharsh1852@gmail.com</a>
-<span class="text-gray-400">|</span>
-<a href="https://linkedin.com/in/patelharsh18" target="_blank" class="hover:text-blue-700">linkedin.com/in/patelharsh18</a>
-<span class="text-gray-400">|</span>
-<a href="https://github.com/git-patel" target="_blank" class="hover:text-blue-700">github.com/git-patel</a>
-<span class="text-gray-400">|</span>
-<span>Ahmedabad, Gujarat, India</span>
-<span class="text-gray-400">|</span>
-<span>3+ Years Experience</span>
-</div>
-</header>
+<body class="bg-gray-100 text-gray-800">
+<div class="container mx-auto max-w-5xl bg-white shadow-2xl px-8 py-10 my-8 rounded-xl">
 
-<!-- PROFESSIONAL SUMMARY -->
-<section class="mb-10 slide-in section-border shadow-hover print-break">
-<h3 class="text-2xl font-bold text-blue-900 border-b pb-2 mb-4">Professional Summary</h3>
-<p class="text-gray-700 leading-relaxed text-[15px]">
-Software Engineer - Android with 3+ years of experience designing and building high-performance, scalable mobile applications using <strong>Kotlin</strong> and modern Android architecture (MVVM, Jetpack Components).
-Expertise in REST API integration, background processing, real-time location tracking, NFC, Room Database, WorkManager, and performance optimization.
-Successfully published <strong>25+ Android applications</strong> on Google Play Store, serving 250,000+ users.
-Proven ability to handle full app lifecycle — architecture, implementation, testing, Play Store deployment, and monitoring.
-</p>
-</section>
-
-<!-- TECHNICAL SKILLS -->
-<section class="mb-10 slide-in section-border shadow-hover print-break">
-<h3 class="text-2xl font-bold text-blue-900 border-b pb-2 mb-4">Technical Skills</h3>
-<div class="grid md:grid-cols-2 gap-8 text-gray-700 text-[15px]">
-<div>
-<ul class="list-disc list-inside space-y-2">
-<li><strong>Languages:</strong> Kotlin, Java, Dart</li>
-<li><strong>Architecture & Frameworks:</strong> MVVM, Jetpack Components (ViewModel, LiveData, Room, WorkManager, Navigation), Material Design</li>
-<li><strong>Networking & APIs:</strong> Retrofit, OkHttp, REST APIs, GraphQL</li>
-<li><strong>Mobile Features:</strong> Google Maps SDK, Fused Location Provider, NFC Read/Write, Firebase (Crashlytics, Analytics, FCM), Push Notifications</li>
-</ul>
-</div>
-<div>
-<ul class="list-disc list-inside space-y-2">
-<li><strong>Tools & Platforms:</strong> Android Studio, Git/GitHub, Gradle, Firebase Console</li>
-<li><strong>DevOps & Deployment:</strong> Play Store Publishing, GitHub Actions (CI/CD basics), APK Signing & Versioning</li>
-<li><strong>Performance & Optimization:</strong> Battery Optimization, Doze Mode, Background Location, App Profiling, Offline-first Architecture</li>
-</ul>
-</div>
-</div>
-</section>
-
-<!-- PROFESSIONAL EXPERIENCE -->
-<section class="mb-10 slide-in section-border shadow-hover print-break">
-<h3 class="text-2xl font-bold text-blue-900 border-b pb-2 mb-6">Professional Experience</h3>
-  
-   <!-- Tuvoc Technologies -->
-         
-  
-<!-- Current Job -->
-<div class="mb-8">
-
-
-<div class="mb-8">
-    <div>
-        <div class="flex justify-between items-baseline">
-            <h4 class="text-lg font-semibold text-gray-900">Software Engineer - Android</h4>
-            <p class="text-gray-500 text-sm">April 2026 – Present</p>
+    <!-- HEADER -->
+    <header class="text-center mb-9">
+        <h1 class="text-4xl font-extrabold text-blue-900">Harsh G. Patel</h1>
+        <h2 class="text-lg text-gray-600 mt-2">
+            Android Software Engineer | Android Applications & SDK Development | Kotlin | AdTech
+        </h2>
+        <div class="flex flex-wrap justify-center gap-x-3 gap-y-1 mt-4 text-gray-700 text-sm">
+            <a href="tel:+919662414176">+91 96624 14176</a>
+            <span class="text-gray-400">|</span>
+            <a href="mailto:patelharsh1852@gmail.com">patelharsh1852@gmail.com</a>
+            <span class="text-gray-400">|</span>
+            <a href="https://linkedin.com/in/patelharsh18" target="_blank" rel="noopener">linkedin.com/in/patelharsh18</a>
+            <span class="text-gray-400">|</span>
+            <a href="https://github.com/git-patel" target="_blank" rel="noopener">github.com/git-patel</a>
+            <span class="text-gray-400">|</span>
+            <span>Ahmedabad, Gujarat, India</span>
         </div>
-        <p class="text-gray-600 italic">Tuvoc Technologies</p>
+    </header>
 
-        <ul class="mt-4 space-y-3 text-gray-700 text-[15px] list-disc list-inside">
-            <li>Developed <strong>Chat CxC</strong> – an AI-powered communication platform for field service technicians (ServiceTitan integration) <a href="https://play.google.com/store/apps/details?id=com.cxc.ai" target="_blank" class="text-blue-600 hover:underline">(Play Store)</a>.</li>
+    <!-- PROFESSIONAL SUMMARY -->
+    <section class="mb-8 section-border resume-section">
+        <h3 class="text-xl font-bold text-blue-900 border-b pb-2 mb-3">Professional Summary</h3>
+        <p class="text-gray-700 leading-relaxed text-sm">
+            Android Software Engineer with <strong>3.5+ years of experience</strong> building and maintaining
+            Android applications as well as native mobile SDKs. Experienced across the complete development
+            lifecycle, from application architecture and feature implementation to API integration, debugging,
+            testing, release management and production support. Currently contributing to an AdTech mobile
+            platform, while bringing hands-on experience in enterprise applications, real-time communication,
+            background processing and cross-platform mobile integrations.
+        </p>
+    </section>
 
-            <li>Implemented full-featured Jitsi video calling with complete in-app call control, custom ringtone playback, call indicator popups, foreground/background call handling, and call recording with real-time transcription.</li>
+    <!-- TECHNICAL SKILLS -->
+    <section class="mb-8 section-border resume-section">
+        <h3 class="text-xl font-bold text-blue-900 border-b pb-2 mb-3">Technical Skills</h3>
+        <div class="grid md:grid-cols-2 gap-x-8 gap-y-2 text-sm text-gray-700">
+            <div>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Languages:</strong> Kotlin, Java, Dart</li>
+                    <li><strong>Android:</strong> Android SDK, Jetpack, MVVM, ViewModel, LiveData, Room, WorkManager, Coroutines</li>
+                    <li><strong>Application Development:</strong> Material Design, Navigation, Background Services, NFC, Location Tracking, Push Notifications</li>
+                    <li><strong>AdTech & Mediation:</strong> Google AdMob, Google Ad Manager (GAM), AppLovin MAX, Unity LevelPlay</li>
+                    <li><strong>Cross-platform:</strong> Flutter, React Native, Native Android Integration</li>
+                </ul>
+            </div>
+            <div>
+                <ul class="list-disc list-inside space-y-2">
+                    <li><strong>Networking:</strong> Retrofit, OkHttp, REST APIs, WebSocket, JSON</li>
+                    <li><strong>SDK & Build:</strong> Custom SDKs, Mediation Adapters, Gradle, Maven Central, Dependency Management</li>
+                    <li><strong>Firebase:</strong> Crashlytics, Analytics, Cloud Messaging</li>
+                    <li><strong>Testing & Debugging:</strong> Logcat, ProGuard/R8, ANR and Crash Analysis, SDK Compatibility Testing</li>
+                    <li><strong>Tools & Workflow:</strong> Android Studio, Git, GitLab, GitHub, Jira, Firebase Console</li>
+                </ul>
+            </div>
+        </div>
+    </section>
 
-            <li>Built advanced call recording system with automatic recording based on technician location, chunked audio uploads, WebSocket communication, and AI-powered response integration.</li>
+    <!-- PROFESSIONAL EXPERIENCE -->
+    <section class="mb-8 section-border">
+        <h3 class="text-xl font-bold text-blue-900 border-b pb-2 mb-5">Professional Experience</h3>
 
-            <li>Developing and maintaining <strong>TapMind Android SDK</strong> for mobile ad monetization, focusing on SDK architecture, performance optimization, and production-ready releases.</li>
+        <!-- TAPMIND -->
+        <div class="experience-item mb-7">
+            <div class="flex flex-wrap justify-between items-baseline gap-2">
+                <h4 class="text-lg font-semibold text-gray-900">Senior Software Engineer – Mobile Platform (Android)</h4>
+                <p class="text-gray-500 text-sm">July 2026 – Present</p>
+            </div>
+            <p class="text-gray-600 italic text-sm">TapMind</p>
+            <ul class="mt-3 space-y-2 text-gray-700 text-sm list-disc list-inside">
+                <li>Develop and maintain the <strong>TapMind Android Mediation SDK</strong>, contributing to SDK architecture, modular implementation, lifecycle management, performance and production stability.</li>
+                <li>Build and maintain custom mediation adapters for <strong>Google AdMob, Google Ad Manager (GAM), AppLovin MAX and Unity LevelPlay (IronSource)</strong> for integration with the TapMind AdTech platform.</li>
+                <li>Implement and troubleshoot ad mediation workflows, including SDK initialization, ad requests, loading, bidding, impressions, clicks, revenue events, callbacks and no-fill handling.</li>
+                <li>Work on standard and Next Generation AdMob/GAM adapter integrations, including adapter class configuration, dependency compatibility and initialization troubleshooting.</li>
+                <li>Develop and release Android libraries using Kotlin, Java and Gradle; manage dependencies, versioning, signing and publication through <strong>Maven Central</strong>.</li>
+                <li>Contribute to cross-platform SDK integrations for <strong>Flutter and React Native</strong>, connecting framework-level integrations with native Android SDK functionality.</li>
+                <li>Implement and maintain SDK configuration flows using REST APIs, including publisher-specific configuration, response validation, retry handling and local configuration management.</li>
+                <li>Improve telemetry and event reporting for mediation requests, fill outcomes, errors and latency; work with structured event logs to support diagnostics and reporting.</li>
+                <li>Investigate publisher integration issues involving package names, application IDs, ad units, placement parameters, adapter class names and mediation dashboard configuration.</li>
+                <li>Debug production issues related to SDK initialization, ProGuard/R8, ANRs, adapter compatibility, callbacks and no-fill responses using Logcat and integration test builds.</li>
+                <li>Validate publisher integrations and SDK releases by checking request flow, ad responses, callbacks and reporting against mediation dashboards; collaborate with publishers, QA and backend teams to resolve issues.</li>
+            </ul>
+        </div>
 
-            <li>Developed and maintained custom mediation adapters for <strong>AppLovin MAX</strong>, <strong>Unity LevelPlay (IronSource)</strong>, <strong>Google Ad Manager (GAM)</strong>, and <strong>Google AdMob</strong>, enabling seamless integration with the TapMind mediation platform.</li>
+        <!-- TUVOC -->
+        <div class="experience-item mb-7">
+            <div class="flex flex-wrap justify-between items-baseline gap-2">
+                <h4 class="text-lg font-semibold text-gray-900">Software Engineer – Android</h4>
+                <p class="text-gray-500 text-sm">April 2026 – June 2026</p>
+            </div>
+            <p class="text-gray-600 italic text-sm">Tuvoc Technologies</p>
+            <ul class="mt-3 space-y-2 text-gray-700 text-sm list-disc list-inside">
+                <li>Worked on <strong>Chat CxC</strong>, an AI-powered communication platform for field service technicians with ServiceTitan integration.</li>
+                <li>Implemented Jitsi-based video calling and in-app call controls, including custom ringtone playback, call indicator popups and foreground/background call handling.</li>
+                <li>Worked on call recording functionality, including location-based automatic recording, chunked audio uploads and real-time communication workflows.</li>
+                <li>Integrated WebSocket-based communication and supported AI-powered response and real-time transcription workflows.</li>
+                <li>Contributed to Android application feature development, debugging and integration of communication-related functionality.</li>
+            </ul>
+        </div>
 
-            <li>Implemented complete ad lifecycle support including ad initialization, loading, bidding, impressions, clicks, revenue tracking, callbacks, and event reporting across multiple mediation platforms.</li>
+        <!-- CHPL -->
+        <div class="experience-item mb-7">
+            <div class="flex flex-wrap justify-between items-baseline gap-2">
+                <h4 class="text-lg font-semibold text-gray-900">Senior Android Developer</h4>
+                <p class="text-gray-500 text-sm">May 2023 – April 2026</p>
+            </div>
+            <p class="text-gray-600 italic text-sm">CHPL · Ahmedabad</p>
+            <ul class="mt-3 space-y-2 text-gray-700 text-sm list-disc list-inside">
+                <li>Developed and published <strong>19+ Android applications</strong> using Kotlin and MVVM, contributing to products serving more than 150,000 users.</li>
+                <li>Contributed to <strong>MyCo – Your Business App</strong>, implementing business modules including visitor/front-office management, attendance with geo-fencing and selfie verification, real-time tracking, leave, salary and asset management. <a href="https://play.google.com/store/apps/details?id=com.mycompany.fhpl" target="_blank" rel="noopener" class="text-blue-700">(Play Store)</a></li>
+                <li>Developed features for <strong>CHPL Smart Society</strong>, including resident directory, events, parking, complaints and SOS functionality. <a href="https://play.google.com/store/apps/details?id=com.smartsociety.group" target="_blank" rel="noopener" class="text-blue-700">(Play Store)</a></li>
+                <li>Worked on <strong>OTerRi</strong>, a laundry service application with pickup and delivery scheduling, order tracking and Razorpay payment integration. <a href="https://play.google.com/store/apps/details?id=com.mksoterri.app" target="_blank" rel="noopener" class="text-blue-700">(Play Store)</a></li>
+                <li>Implemented NFC tagging with offline data synchronization using Room Database and background location workflows using WorkManager and Fused Location Provider.</li>
+                <li>Integrated REST APIs and Firebase services, resolved production issues and improved application stability, contributing to 99%+ crash-free sessions.</li>
+            </ul>
+        </div>
 
-            <li>Performed SDK compatibility testing, debugging, log analysis, mediation validation, and reporting verification by comparing SDK events with mediation dashboards to ensure accurate request, impression, and revenue tracking.</li>
+        <!-- TECHNOMARK -->
+        <div class="experience-item">
+            <div class="flex flex-wrap justify-between items-baseline gap-2">
+                <h4 class="text-lg font-semibold text-gray-900">Android Developer</h4>
+                <p class="text-gray-500 text-sm">January 2023 – May 2023</p>
+            </div>
+            <p class="text-gray-600 italic text-sm">Technomark Solutions</p>
+            <ul class="mt-3 space-y-2 text-gray-700 text-sm list-disc list-inside">
+                <li>Developed features for a financial account management application with real-time data synchronization and offline support.</li>
+                <li>Integrated REST APIs using Retrofit and OkHttp, including response handling, caching and error management.</li>
+                <li>Improved application screens and user experience using Material Design components.</li>
+            </ul>
+        </div>
+    </section>
 
-            <li>Published and maintained Android libraries on Maven Central with proper versioning, dependency management, signing, and release automation.</li>
+    <!-- KEY PROJECTS -->
+    <section class="mb-8 section-border">
+        <h3 class="text-xl font-bold text-blue-900 border-b pb-2 mb-5">Key Projects</h3>
+        <div class="grid md:grid-cols-2 gap-5 text-sm">
 
-            <li>Worked on feature development, REST API integration, SDK optimization, bug fixes, and production-level performance improvements using Kotlin and modern Android best practices.</li>
+            <div class="project-card bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-900">TapMind Android Mediation SDK</h4>
+                <p class="mt-2 text-gray-700">Android SDK and custom mediation adapter development for an AdTech monetization platform, supporting AdMob, GAM, AppLovin MAX and Unity LevelPlay integrations, SDK configuration, lifecycle callbacks, telemetry and publisher troubleshooting.</p>
+            </div>
+
+            <div class="project-card bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-900">Chat CxC – AI Communication Platform</h4>
+                <a href="https://play.google.com/store/apps/details?id=com.cxc.ai" target="_blank" rel="noopener" class="text-blue-700">(Play Store)</a>
+                <p class="mt-2 text-gray-700">Communication platform for field service technicians with ServiceTitan integration, Jitsi video calling, call controls, call recording, WebSocket communication and AI-assisted transcription/response workflows.</p>
+            </div>
+
+            <div class="project-card bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-900">MyCo – Your Business App</h4>
+                <a href="https://play.google.com/store/apps/details?id=com.mycompany.fhpl" target="_blank" rel="noopener" class="text-blue-700">(Play Store)</a>
+                <p class="mt-2 text-gray-700">Enterprise application with 100K+ downloads, featuring attendance, geo-fencing, selfie verification, employee tracking, visitor management, leave, salary and asset management.</p>
+            </div>
+
+            <div class="project-card bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-900">CHPL Smart Society</h4>
+                <a href="https://play.google.com/store/apps/details?id=com.smartsociety.group" target="_blank" rel="noopener" class="text-blue-700">(Play Store)</a>
+                <p class="mt-2 text-gray-700">Residential community application with member directory, events, parking and visitor management, complaints, SOS alerts, polls and society communication features.</p>
+            </div>
+
+            <div class="project-card bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-900">OTerRi – Laundry Service</h4>
+                <a href="https://play.google.com/store/apps/details?id=com.mksoterri.app" target="_blank" rel="noopener" class="text-blue-700">(Play Store)</a>
+                <p class="mt-2 text-gray-700">Laundry service application with pickup and delivery scheduling, real-time order tracking, Razorpay payments, order history and reorder functionality.</p>
+            </div>
+
+            <div class="project-card bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-900">AI Prompts – Gem Art Studio</h4>
+                <a href="https://play.google.com/store/apps/details?id=com.heaventrinity.dynamic" target="_blank" rel="noopener" class="text-blue-700">(Play Store)</a>
+                <p class="mt-2 text-gray-700">Offline-capable AI prompt library with categorized prompts, search, image previews and customization, built using Kotlin, MVVM and Room Database.</p>
+            </div>
+
+            <div class="project-card bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-900">IPO Live – Stock Market Tracker</h4>
+                <a href="https://play.google.com/store/apps/details?id=com.heaventrinity.ipo" target="_blank" rel="noopener" class="text-blue-700">(Play Store)</a>
+                <p class="mt-2 text-gray-700">Indian IPO and GMP tracking application with subscription status, market updates and push notifications using Retrofit, Firebase and WorkManager.</p>
+            </div>
+
+            <div class="project-card bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-900">Talent Tuition Classes</h4>
+                <a href="https://play.google.com/store/apps/details?id=com.hvn.edutech" target="_blank" rel="noopener" class="text-blue-700">(Play Store)</a>
+                <p class="mt-2 text-gray-700">Education application with chapter-wise notes, quizzes, progress tracking, parent mode, themes and Google Sign-In.</p>
+            </div>
+
+            <div class="project-card bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-900">TimeGuard – Screen Time Manager</h4>
+                <a href="https://play.google.com/store/apps/details?id=com.hvn.screentimelock" target="_blank" rel="noopener" class="text-blue-700">(Play Store)</a>
+                <p class="mt-2 text-gray-700">On-device productivity application for app usage limits, focus schedules, usage analytics and reminders using Android Usage Stats and Accessibility services.</p>
+            </div>
+
+            <div class="project-card bg-gray-50 p-4 rounded-lg border border-gray-200">
+                <h4 class="font-semibold text-gray-900">Pixify – Image & PDF Compressor</h4>
+                <a href="https://play.google.com/store/apps/details?id=com.hvn.compressor" target="_blank" rel="noopener" class="text-blue-700">(Play Store)</a>
+                <p class="mt-2 text-gray-700">Offline image and PDF compression application focused on reducing file sizes while preserving quality, built with Kotlin and Android UI components.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section class="mb-8 section-border resume-section">
+        <h3 class="text-xl font-bold text-blue-900 border-b pb-2 mb-3">Achievements</h3>
+        <ul class="list-disc list-inside space-y-2 text-gray-700 text-sm">
+            <li>Developed and contributed to the publication of <strong>25+ Android applications</strong> with a combined reach of more than <strong>250,000 users/downloads</strong>.</li>
+            <li>Recognized as <strong>Employee of the Quarter</strong> at CHPL for contributions to the delivery of multiple Android applications.</li>
         </ul>
-    </div>
-</div>
-  <br>
-  
-<div class="flex justify-between items-baseline">
-<h4 class="text-lg font-semibold text-gray-900">Senior Android Developer</h4>
-<p class="text-gray-500 text-sm">May 2023 – April 2026</p>
-</div>
-<p class="text-gray-600 italic">CHPL • Ahmedabad</p>
-<ul class="mt-4 space-y-3 text-gray-700 text-[15px] list-disc list-inside">
-<li>Developed and published <strong>19+ Android applications</strong> using Kotlin & MVVM, serving 150,000+ users across India.</li>
-<li>Contributed significantly to <strong>MyCo - Your Business App</strong> (100K+ downloads): led implementation of key modules including visitor/Front Office management, attendance (geo-fencing + selfie verification), real-time tracking, leave, salary, asset management <a href="https://play.google.com/store/apps/details?id=com.mycompany.fhpl" target="_blank" class="text-blue-600 hover:underline">(Play Store)</a>.</li>
-<li>Built <strong>CHPL Smart Society</strong>: resident community app with member directory, events, parking, complaints & SOS features <a href="https://play.google.com/store/apps/details?id=com.smartsociety.group" target="_blank" class="text-blue-600 hover:underline">(Play Store)</a>.</li>
-<li>Created <strong>OTerRi</strong> (10K+ downloads): laundry service app with scheduling, real-time tracking & Razorpay payments <a href="https://play.google.com/store/apps/details?id=com.mksoterri.app" target="_blank" class="text-blue-600 hover:underline">(Play Store)</a>.</li>
-<li>Implemented NFC tagging with offline sync (Room DB) and battery-optimized background location (WorkManager + Fused Location).</li>
-<li>Achieved 99%+ crash-free sessions via Firebase Crashlytics and performance optimization.</li>
-</ul>
-</div>
+    </section>
 
-<!-- Previous Job -->
-<div>
-<div class="flex justify-between items-baseline">
-<h4 class="text-lg font-semibold text-gray-900">Android Developer</h4>
-<p class="text-gray-500 text-sm">Jan 2023 – May 2023</p>
-</div>
-<p class="text-gray-600 italic">Technomark Solutions</p>
-<ul class="mt-4 space-y-3 text-gray-700 text-[15px] list-disc list-inside">
-<li>Developed financial account management app with real-time sync and offline support.</li>
-<li>Integrated REST APIs (Retrofit + OkHttp) with caching and error handling.</li>
-<li>Enhanced UI/UX using Material Design 3.</li>
-</ul>
-</div>
-</section>
-
-<!-- KEY PROJECTS -->
-<section class="mb-10 slide-in section-border shadow-hover print-break">
-<h3 class="text-2xl font-bold text-blue-900 border-b pb-2 mb-6">Key Projects</h3>
-
-<div class="grid md:grid-cols-2 gap-6">
-
-  <!-- MyCo -->
-  <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 shadow-hover">
-    <h4 class="text-lg font-semibold text-gray-900">
-      MyCo - Your Business App
-      <a href="https://play.google.com/store/apps/details?id=com.mycompany.fhpl" target="_blank" class="text-blue-600 hover:underline text-base ml-2">(Play Store)</a>
-    </h4>
-    <ul class="mt-3 space-y-2 text-gray-700 text-[15px] list-disc list-inside">
-      <li>Enterprise connectivity app (100K+ downloads) for businesses — member directory, intercom, digital notice board, events, polls.</li>
-      <li>Core features: geo-fenced attendance with selfie verification, real-time location, shift/leave/salary/asset management, work reports, visitor/Front Office management.</li>
-      <li>Built with Kotlin, MVVM, Retrofit, Firebase, WorkManager for sync & notifications; supports remote/field work scenarios.</li>
-    </ul>
-  </div>
-
-  <!-- CHPL Smart Society -->
-  <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 shadow-hover">
-    <h4 class="text-lg font-semibold text-gray-900">
-      CHPL Smart Society
-      <a href="https://play.google.com/store/apps/details?id=com.smartsociety.group" target="_blank" class="text-blue-600 hover:underline text-base ml-2">(Play Store)</a>
-    </h4>
-    <ul class="mt-3 space-y-2 text-gray-700 text-[15px] list-disc list-inside">
-      <li>Community platform for apartments — connect residents, manage society activities.</li>
-      <li>Includes member directory, events, discussion forum, parking/visitor/courier management, bills, complaints, SOS alerts, polls/elections.</li>
-      <li>Developed with Kotlin, Material Design, Firebase for real-time chat, notifications & gallery features.</li>
-    </ul>
-  </div>
-
-  <!-- OTerRi -->
-  <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 shadow-hover">
-    <h4 class="text-lg font-semibold text-gray-900">
-      OTerRi - Laundry Service
-      <a href="https://play.google.com/store/apps/details?id=com.mksoterri.app" target="_blank" class="text-blue-600 hover:underline text-base ml-2">(Play Store)</a>
-    </h4>
-    <ul class="mt-3 space-y-2 text-gray-700 text-[15px] list-disc list-inside">
-      <li>Laundry management app for scheduling & hassle-free service.</li>
-      <li>Features: pickup/delivery scheduling, real-time order tracking, secure Razorpay payments, order history & quick reorder.</li>
-      <li>Built with Kotlin, MVVM, Google Maps integration, Retrofit for backend sync.</li>
-    </ul>
-  </div>
-
-  <!-- Gem Art Studio -->
-  <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 shadow-hover">
-    <h4 class="text-lg font-semibold text-gray-900">
-      AI Prompts – Gem Art Studio
-      <a href="https://play.google.com/store/apps/details?id=com.heaventrinity.dynamic" target="_blank" class="text-blue-600 hover:underline text-base ml-2">(Play Store)</a>
-    </h4>
-    <ul class="mt-3 space-y-2 text-gray-700 text-[15px] list-disc list-inside">
-      <li>AI prompt library with 1000+ categorized prompts for DALL·E, Midjourney etc., including festival themes.</li>
-      <li>Smart search, preview images, customization, user-submitted prompts; fully offline-capable.</li>
-      <li>Built with Kotlin, MVVM, Room Database, offline-first architecture.</li>
-    </ul>
-  </div>
-
-  <!-- IPO Live -->
-  <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 shadow-hover">
-    <h4 class="text-lg font-semibold text-gray-900">
-      IPO Live – Stock Market Tracker
-      <a href="https://play.google.com/store/apps/details?id=com.heaventrinity.ipo" target="_blank" class="text-blue-600 hover:underline text-base ml-2">(Play Store)</a>
-    </h4>
-    <ul class="mt-3 space-y-2 text-gray-700 text-[15px] list-disc list-inside">
-      <li>Real-time IPO/GMP tracking for Indian market with subscription status & push alerts.</li>
-      <li>Reliable background updates and notifications system.</li>
-      <li>Developed using Kotlin, Retrofit, Firebase, WorkManager.</li>
-    </ul>
-  </div>
-
-  <!-- Talent Tuition Classes -->
-  <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 shadow-hover">
-    <h4 class="text-lg font-semibold text-gray-900">
-      Talent Tuition Classes
-      <a href="https://play.google.com/store/apps/details?id=com.hvn.edutech" target="_blank" class="text-blue-600 hover:underline text-base ml-2">(Play Store)</a>
-    </h4>
-    <ul class="mt-3 space-y-2 text-gray-700 text-[15px] list-disc list-inside">
-      <li>Education companion app with personalized onboarding, chapter-wise notes & quizzes.</li>
-      <li>Progress tracking, weak area detection, parent mode, dark/light theme, Google Sign-In.</li>
-      <li>Built with Kotlin, Material Design 3, MVVM, Room Database.</li>
-    </ul>
-  </div>
-
-  <!-- TimeGuard -->
-  <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 shadow-hover">
-    <h4 class="text-lg font-semibold text-gray-900">
-      TimeGuard Screen Time Manager
-      <a href="https://play.google.com/store/apps/details?id=com.hvn.screentimelock" target="_blank" class="text-blue-600 hover:underline text-base ml-2">(Play Store)</a>
-    </h4>
-    <ul class="mt-3 space-y-2 text-gray-700 text-[15px] list-disc list-inside">
-      <li>Privacy-first productivity tool for app time limits, focus schedules & usage analytics/charts.</li>
-      <li>Fully on-device (no cloud/account), with reminders & blocking via Accessibility Service.</li>
-      <li>Built with Kotlin, Usage Stats Manager, modern Material Design.</li>
-    </ul>
-  </div>
-
-  <!-- New: Pixify Image & PDF Compressor -->
-  <div class="bg-gray-50 p-5 rounded-lg border border-gray-200 shadow-hover">
-    <h4 class="text-lg font-semibold text-gray-900">
-      Pixify: Image & PDF Compressor
-      <a href="https://play.google.com/store/apps/details?id=com.hvn.compressor" target="_blank" class="text-blue-600 hover:underline text-base ml-2">(Play Store)</a>
-    </h4>
-    <ul class="mt-3 space-y-2 text-gray-700 text-[15px] list-disc list-inside">
-      <li>All-in-one offline compressor for images and PDFs to reduce file size while preserving quality, ideal for storage optimization and fast sharing.</li>
-     
-     
-      <li>Built with Kotlin, modern Material Design, efficient processing for clean, fast UI on Android.</li>
-    </ul>
-  </div>
-
-</div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section class="mb-10 slide-in section-border shadow-hover print-break">
-<h3 class="text-2xl font-bold text-blue-900 border-b pb-2 mb-4">Achievements</h3>
-<ul class="list-disc list-inside space-y-3 text-gray-700 text-[15px]">
-<li>Published <strong>25+ Android apps</strong> on Google Play Store with combined <strong>250,000+</strong> users/downloads.</li>
-<li>Awarded <strong>Employee of the Quarter</strong> at CHPL for launching multiple high-impact applications.</li>
-</ul>
-</section>
-
-<!-- EDUCATION -->
-<section class="slide-in section-border shadow-hover print-break">
-<h3 class="text-2xl font-bold text-blue-900 border-b pb-2 mb-4">Education</h3>
-<div class="flex justify-between items-start">
-<div>
-<h4 class="text-lg font-semibold">B.Tech – Computer Science & Engineering</h4>
-<p class="text-gray-600">Parul Institute of Engineering and Technology, Vadodara</p>
-</div>
-<p class="text-gray-500 text-sm">CGPA: 7.6 / 10</p>
-</div>
-</section>
+    <!-- EDUCATION -->
+    <section class="section-border resume-section">
+        <h3 class="text-xl font-bold text-blue-900 border-b pb-2 mb-3">Education</h3>
+        <div class="flex flex-wrap justify-between items-start gap-2">
+            <div>
+                <h4 class="font-semibold text-gray-900">B.Tech – Computer Science & Engineering</h4>
+                <p class="text-gray-600 text-sm">Parul Institute of Engineering and Technology, Vadodara</p>
+            </div>
+            <p class="text-gray-500 text-sm">CGPA: 7.6 / 10</p>
+        </div>
+    </section>
 
 </div>
 </body>
