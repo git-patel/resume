@@ -9,6 +9,9 @@
     body { font-family: Arial, Helvetica, sans-serif; }
     .section-border { border-left: 4px solid #1e40af; padding-left: 1.25rem; }
     .resume-section { break-inside: avoid; }
+    /* Start the earlier CHPL and Technomark roles on page 2 when printing. */
+    .page-two-start { break-before: page; page-break-before: always; }
+    @page { size: A4; margin: 10mm; }
     @media print {
         body { background: #fff !important; }
         .container {
@@ -21,7 +24,9 @@
         .no-print { display: none !important; }
         a { color: #1e40af !important; text-decoration: none !important; }
         .section-border { border-left-width: 3px; }
-        section, .experience-item, .project-card { break-inside: avoid; }
+        section { break-inside: auto; }
+        .experience-item, .project-card { break-inside: avoid; }
+        .page-two-start { break-before: page; page-break-before: always; }
     }
 </style>
 </head>
@@ -128,8 +133,8 @@
             </ul>
         </div>
 
-        <!-- CHPL -->
-        <div class="experience-item mb-7">
+        <!-- CHPL: begin page 2 in the printed resume -->
+        <div class="experience-item mb-7 page-two-start">
             <div class="flex flex-wrap justify-between items-baseline gap-2">
                 <h4 class="text-lg font-semibold text-gray-900">Senior Android Developer</h4>
                 <p class="text-gray-500 text-sm">May 2023 – April 2026</p>
